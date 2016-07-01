@@ -14,6 +14,7 @@
 		D8EB0F481D2608F700B6E25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8EB0F471D2608F700B6E25E /* Assets.xcassets */; };
 		D8EB0F4B1D2608F700B6E25E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EB0F491D2608F700B6E25E /* LaunchScreen.storyboard */; };
 		D8EB0F571D26122300B6E25E /* Robot-Unicorn.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D8EB0F561D26122300B6E25E /* Robot-Unicorn.atlas */; };
+		D8EF50AB1D2704EA00B11D0B /* Unicorn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EF50AA1D2704EA00B11D0B /* Unicorn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D8EB0F4A1D2608F700B6E25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8EB0F4C1D2608F700B6E25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8EB0F561D26122300B6E25E /* Robot-Unicorn.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "Robot-Unicorn.atlas"; sourceTree = "<group>"; };
+		D8EF50AA1D2704EA00B11D0B /* Unicorn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unicorn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				D8EB0F3C1D2608F700B6E25E /* AppDelegate.swift */,
 				D8EB0F401D2608F700B6E25E /* GameScene.swift */,
+				D8EF50AA1D2704EA00B11D0B /* Unicorn.swift */,
 				D8EB0F421D2608F700B6E25E /* GameViewController.swift */,
 				D8EB0F441D2608F700B6E25E /* Main.storyboard */,
 				D8EB0F471D2608F700B6E25E /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			files = (
 				D8EB0F411D2608F700B6E25E /* GameScene.swift in Sources */,
 				D8EB0F431D2608F700B6E25E /* GameViewController.swift in Sources */,
+				D8EF50AB1D2704EA00B11D0B /* Unicorn.swift in Sources */,
 				D8EB0F3D1D2608F700B6E25E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +298,7 @@
 				D8EB0F511D2608F700B6E25E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
