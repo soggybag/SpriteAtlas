@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D8EB0F3D1D2608F700B6E25E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB0F3C1D2608F700B6E25E /* AppDelegate.swift */; };
-		D8EB0F3F1D2608F700B6E25E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D8EB0F3E1D2608F700B6E25E /* GameScene.sks */; };
 		D8EB0F411D2608F700B6E25E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB0F401D2608F700B6E25E /* GameScene.swift */; };
 		D8EB0F431D2608F700B6E25E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB0F421D2608F700B6E25E /* GameViewController.swift */; };
 		D8EB0F461D2608F700B6E25E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EB0F441D2608F700B6E25E /* Main.storyboard */; };
 		D8EB0F481D2608F700B6E25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8EB0F471D2608F700B6E25E /* Assets.xcassets */; };
 		D8EB0F4B1D2608F700B6E25E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EB0F491D2608F700B6E25E /* LaunchScreen.storyboard */; };
+		D8EB0F571D26122300B6E25E /* Robot-Unicorn.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D8EB0F561D26122300B6E25E /* Robot-Unicorn.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D8EB0F391D2608F700B6E25E /* SpriteAtlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteAtlas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EB0F3C1D2608F700B6E25E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8EB0F3E1D2608F700B6E25E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		D8EB0F401D2608F700B6E25E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		D8EB0F421D2608F700B6E25E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D8EB0F451D2608F700B6E25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8EB0F471D2608F700B6E25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8EB0F4A1D2608F700B6E25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8EB0F4C1D2608F700B6E25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8EB0F561D26122300B6E25E /* Robot-Unicorn.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "Robot-Unicorn.atlas"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +44,7 @@
 			children = (
 				D8EB0F3B1D2608F700B6E25E /* SpriteAtlas */,
 				D8EB0F3A1D2608F700B6E25E /* Products */,
+				D8EB0F561D26122300B6E25E /* Robot-Unicorn.atlas */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				D8EB0F3C1D2608F700B6E25E /* AppDelegate.swift */,
-				D8EB0F3E1D2608F700B6E25E /* GameScene.sks */,
 				D8EB0F401D2608F700B6E25E /* GameScene.swift */,
 				D8EB0F421D2608F700B6E25E /* GameViewController.swift */,
 				D8EB0F441D2608F700B6E25E /* Main.storyboard */,
@@ -128,10 +128,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8EB0F3F1D2608F700B6E25E /* GameScene.sks in Resources */,
 				D8EB0F4B1D2608F700B6E25E /* LaunchScreen.storyboard in Resources */,
 				D8EB0F481D2608F700B6E25E /* Assets.xcassets in Resources */,
 				D8EB0F461D2608F700B6E25E /* Main.storyboard in Resources */,
+				D8EB0F571D26122300B6E25E /* Robot-Unicorn.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
