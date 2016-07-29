@@ -7,6 +7,12 @@ Tapping the left side of the screen makes hte unicorn leap. Tapping the right si
 
 See the comments for more information. 
 
+![screenshot-a](screenshot-a.gif)
+
+![screenshot-b](screenshot-b.gif)
+
+![screenshot-c](screenshot-c.gif)
+
 ![screenshot-1](screenshot-1.png)
 
 ![screenshot-2](screenshot-2.png)
