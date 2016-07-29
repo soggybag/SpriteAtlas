@@ -7,9 +7,15 @@ Tapping the left side of the screen makes hte unicorn leap. Tapping the right si
 
 See the comments for more information. 
 
+## Run
+
 ![screenshot-a](screenshot-a.gif)
 
+## Jump
+
 ![screenshot-b](screenshot-b.gif)
+
+## Dash 
 
 ![screenshot-c](screenshot-c.gif)
 
