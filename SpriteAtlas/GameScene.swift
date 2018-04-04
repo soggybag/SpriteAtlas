@@ -14,7 +14,7 @@ class GameScene: SKScene {
     let unicorn = Unicorn()
     
     
-    override func didMoveToView(view: SKView) {
+  override func didMove(to view: SKView) {
         /* Setup your scene here */
         
         // Setup the unicorn
@@ -24,15 +24,15 @@ class GameScene: SKScene {
     }
     
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         /* Called when a touch begins */
         
         // A touch on the left makes the unicorn jump. 
         // A touch on the right side makes the uniconr dash.
         
         let touch = touches.first
-        let location = touch?.locationInNode(self)
-        if location?.x < frame.width / 2 {
+    let location = touch?.location(in: self)
+    if (location?.x)! < frame.width / 2 {
             // make the unicorn jump
             unicorn.jump()
         } else {
@@ -41,7 +41,7 @@ class GameScene: SKScene {
         }
     }
    
-    override func update(currentTime: CFTimeInterval) {
+  override func update(_ currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
     }
 }

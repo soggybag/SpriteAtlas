@@ -14,12 +14,15 @@ class Unicorn: SKSpriteNode {
     var runAction: SKAction!
     var jumpAction: SKAction!
     var dashAction: SKAction!
+  
     var isJumping = false
     var isDashing = false
     
     init() {
+      
         let defaultTexture = SKTexture(imageNamed: "RU-1")
-        super.init(texture: defaultTexture, color: UIColor.clearColor(), size: defaultTexture.size())
+      
+      super.init(texture: defaultTexture, color: UIColor.clear, size: defaultTexture.size())
         
         // ----------------------------------------------------------
         // Setup run action. This action is made from textures 1 to 30
@@ -30,13 +33,13 @@ class Unicorn: SKSpriteNode {
         }
         
         // The images are in reverse order for some reason...
-        textures = textures.reverse()
+        textures = textures.reversed()
         
         // Make an action to play these texture frames
-        let animate = SKAction.animateWithTextures(textures, timePerFrame: 0.025, resize: true, restore: false)
+      let animate = SKAction.animate(with: textures, timePerFrame: 0.025, resize: true, restore: false)
         // Run forever magic Unicorn!
-        runAction = SKAction.repeatActionForever(animate) // Save this action for later
-        runAction(runAction)
+      runAction = SKAction.repeatForever(animate) // Save this action for later
+      run(runAction)
         
         
         // ----------------------------------------------------------
@@ -48,20 +51,20 @@ class Unicorn: SKSpriteNode {
         }
         
         // For some reason the frames are in reverse order?
-        textures = textures.reverse()
+        textures = textures.reversed()
         
         // An action to play the jump textures.
-        let jump = SKAction.animateWithTextures(textures, timePerFrame: 0.025, resize: true, restore: false)
+      let jump = SKAction.animate(with: textures, timePerFrame: 0.025, resize: true, restore: false)
         
         // The jump should also move the sprite up then down.
-        let jumpUp = SKAction.moveByX(0, y: 80, duration: 0.5)      // Move up
-        let jumpDown = SKAction.moveByX(0, y: -80, duration: 0.5)   // Move down
+      let jumpUp = SKAction.moveBy(x: 0, y: 80, duration: 0.5)      // Move up
+      let jumpDown = SKAction.moveBy(x: 0, y: -80, duration: 0.5)   // Move down
         let jumpUpDown = SKAction.sequence([jumpUp, jumpDown])      // The move up move down sequence
         // Use a group to play the textures and do the jump at the same time
         let jumpGroup = SKAction.group([jump, jumpUpDown])
         // When the jump is finished go back to run.
-        let backToRun = SKAction.runBlock {
-            self.runAction(self.runAction)
+      let backToRun = SKAction.run {
+        self.run(self.runAction)
             self.isJumping = false
         }
         // Save this action for later in a variable. We'll need it when you tap on the left side.
@@ -78,13 +81,13 @@ class Unicorn: SKSpriteNode {
         }
         
         // Because they are in reverse order!
-        textures = textures.reverse()
+        textures = textures.reversed()
         
         // Play the dash textures
-        let dash = SKAction.animateWithTextures(textures, timePerFrame: 0.025, resize: true, restore: false)
+      let dash = SKAction.animate(with: textures, timePerFrame: 0.025, resize: true, restore: false)
         // When the dash ends return to a run
-        let endDash = SKAction.runBlock {
-            self.runAction(self.runAction)
+      let endDash = SKAction.run {
+        self.run(self.runAction)
             self.isDashing = false
         }
         // Save a dash action for later...
@@ -102,7 +105,7 @@ class Unicorn: SKSpriteNode {
         // only jump if not jumping already
         if !isJumping {
             isJumping = true
-            runAction(jumpAction)
+          run(jumpAction)
         }
     }
     
@@ -110,7 +113,7 @@ class Unicorn: SKSpriteNode {
         // Only dash if not dashing already
         if !isDashing {
             isDashing = true
-            runAction(dashAction)
+          run(dashAction)
         }
     }
     
